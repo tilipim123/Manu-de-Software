@@ -1,5 +1,13 @@
 <?php
 	
+    // Define o limitador de cache
+    session_cache_limiter('must-revalidate');
+    $cache_limiter = session_cache_limiter();
+
+    // Define tempo da sessão
+    session_cache_expire(300);
+    $cache_expire = session_cache_expire();
+    
 	session_start();
 
 	if(!isset($_SESSION['usuario'])){
