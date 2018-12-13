@@ -5,7 +5,7 @@
     $cache_limiter = session_cache_limiter();
 
     // Define tempo da sessão
-    session_cache_expire(300);
+    session_cache_expire(200);
     $cache_expire = session_cache_expire();
     
 	session_start();
